@@ -22,7 +22,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('markup', function() {
-  return gulp.src('src/states/*.jade')
+  return gulp.src('src/*.jade')
     .pipe(jadeGlobbing())
     .pipe(jade({
       pretty: true
@@ -82,7 +82,7 @@ gulp.task('img', function() {
 
 gulp.task('watch', ['browser-sync', 'sass', 'markup', 'img'], function() {
     gulp.watch(['src/assets/styles/*.sass', 'src/assets/styles/*.scss'], ['sass']);
-    gulp.watch('src/states/*.jade', ['jade-watch']);
+    gulp.watch('src/*.jade', ['jade-watch']);
     gulp.watch('src/assets/js/app.js', ['scripts']);
 });
 
