@@ -1,5 +1,6 @@
 # Ignore project directories # 
 /build
+/dev
 /node_modules
 
 # Packages #
