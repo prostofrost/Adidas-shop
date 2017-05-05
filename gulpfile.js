@@ -53,12 +53,12 @@ gulp.task('scripts', function() {
 //     .pipe(gulp.dest('dist/assets/js'));
 // });
 
-gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('dist/assets/styles/libs.css')
-    .pipe(cssnano())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/assets/styles'));
-})
+// gulp.task('css-libs', ['sass'], function() {
+//     return gulp.src('dist/assets/styles/libs.css')
+//     .pipe(cssnano())
+//     .pipe(rename({suffix: '.min'}))
+//     .pipe(gulp.dest('dist/assets/styles'));
+// })
 
 gulp.task('clean', function(){
     return del.sync('build');
@@ -80,7 +80,7 @@ gulp.task('img', function() {
     .pipe(gulp.dest('build/img'))
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'markup', 'img'], function() {
+gulp.task('watch', ['browser-sync', 'sass', 'markup', 'img'], function() {
     gulp.watch(['src/assets/styles/*.sass', 'src/assets/styles/*.scss'], ['sass']);
     gulp.watch('src/states/*.jade', ['jade-watch']);
     gulp.watch('src/assets/js/app.js', ['scripts']);
@@ -98,8 +98,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('build', ['clean', 'img', 'sass'],  function() {
     var buildCss = gulp.src([
-        'dist/assets/styles/main.css',
-        'dist/assets/styles/libs.min.css'
+        'dist/assets/styles/main.css'
     ])
         .pipe(gulp.dest('build/assets/styles'));
 
