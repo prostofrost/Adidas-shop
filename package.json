@@ -1,0 +1,29 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "gulp template",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jade-globbing": "^0.1.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prostofrost",
+  "license": "ISC"
+}
