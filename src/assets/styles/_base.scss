@@ -313,6 +313,8 @@ body {
   align-items: center;
   justify-content: space-between;
   .product-gallery-thumbnails-item {
+    border: none;
+    background: none;
     margin-right: 10px;
     flex: 0 0 17.5%;
     cursor: pointer;
