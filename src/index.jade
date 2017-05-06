@@ -4,60 +4,61 @@ block content
   include ./components/blocks/aside.jade
 
   section.wrapper
-    .filter.mb-15
-      button.filter-switch
-        svg.i-filter
-          use(xlink:href='#i-filter')
-      .filter-gender.mr-70.ml-20
-        button.active Man
-        button Woman
-      .filter-size
-        .filter-size-label Size
-        button 36
-        button 37
-        button 38
-        button 39
-        button 40
-        button.active 41
-        button 42
-    .row
-      .col-xs-4
-        .product-card.product-card-sale
-          img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card.product-card-sale
-          img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card
-          img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-    .row
-      .col-xs-4
-        .product-card
-          img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card.product-card-sale
-          img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card
-          img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-    .row
-      .col-xs-4
-        .product-card
-          img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card.product-card-sale
-          img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
-      .col-xs-4
-        .product-card
-          img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
-          a.product-card-price(href="#") 170$
+    .product-list
+      .filter.mb-15
+        button.filter-switch
+          svg.i-filter
+            use(xlink:href='#i-filter')
+        .filter-gender.mr-70.ml-20
+          button.active Man
+          button Woman
+        .filter-size
+          .filter-size-label Size
+          button 36
+          button 37
+          button 38
+          button 39
+          button 40
+          button.active 41
+          button 42
+      .row
+        .col-xs-4
+          .product-card.product-card-sale
+            img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card.product-card-sale
+            img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card
+            img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+      .row
+        .col-xs-4
+          .product-card
+            img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card.product-card-sale
+            img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card
+            img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+      .row
+        .col-xs-4
+          .product-card
+            img(src="assets/images/shoes/shoes-1.jpg", srcset="assets/images/shoes/shoes-1@2x.jpg 2x, assets/images/shoes/shoes-1@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card.product-card-sale
+            img(src="assets/images/shoes/shoes-2.jpg", srcset="assets/images/shoes/shoes-2@2x.jpg 2x, assets/images/shoes/shoes-2@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
+        .col-xs-4
+          .product-card
+            img(src="assets/images/shoes/shoes-3.jpg", srcset="assets/images/shoes/shoes-3@2x.jpg 2x, assets/images/shoes/shoes-3@3x.jpg 3x", alt="")
+            a.product-card-price(href="#") 170$
 
-  //- script(src='assets/js/app.js')
+    //- script(src='assets/js/app.js')

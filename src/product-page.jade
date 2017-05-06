@@ -4,22 +4,49 @@ block content
   include ./components/blocks/aside.jade
 
   section.wrapper
-    .product-title
-      h1 
-        | Ultra
-        br
-        | boost
-      button.product-save-btn save
+    .product-page
+      header.flex
+        .product-title
+          h1 
+            | Ultra
+            br
+            | boost
+          button.product-save-btn save
 
-    .product-info
-      .product-info-color
-        button.grey
-        button.blue
-        button.black
-        button.palegrey
+        .product-info
+          .product-info-color
+            button.grey
+            button.blue
+            button.black
+            button.palegrey
+            
+            span.product-info-sale-badge sale
 
-      .product-info-sale-badge sale
+          h2.product-info-price 170$
 
-      h2.product-info-price 170$
+      .product-gallery
+        .product-gallery-main
+          img(src="assets/images/shoes/shoes-3@3x.jpg" alt="")
+        ul.product-gallery-thumbnails
+          li
+            img(src="assets/images/shoes/shoes-3.jpg" alt="")
+          li
+            img(src="assets/images/shoes/shoes-3.jpg" alt="")
+          li
+            img(src="assets/images/shoes/shoes-3.jpg" alt="")
+          li
+            img(src="assets/images/shoes/shoes-3.jpg" alt="")
+          li.product-gallery-decor
+            p 
+              | see
+              br 
+              | more
+              br
+              | photos
 
-    .product-gallery
+        .product-description
+          p 
+            span Adidas&nbsp;
+            | is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
+
+    button.buy-btn Buy Now
