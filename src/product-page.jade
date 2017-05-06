@@ -5,7 +5,7 @@ block content
 
   section.wrapper
     .product-page
-      header.flex
+      header.product-info
         .product-title
           h1 
             | Ultra
@@ -13,29 +13,29 @@ block content
             | boost
           button.product-save-btn save
 
-        .product-info
-          .product-info-color
+        .product-sets
+          .product-sets-color
             button.grey
             button.blue
             button.black
             button.palegrey
             
-            span.product-info-sale-badge sale
+            span.product-sets-sale-badge sale
 
-          h2.product-info-price 170$
+          h2.product-sets-price 170$
 
       .product-gallery
         .product-gallery-main
           img(src="assets/images/shoes/shoes-3@3x.jpg" alt="")
         ul.product-gallery-thumbnails
-          li
-            img(src="assets/images/shoes/shoes-3.jpg" alt="")
-          li
-            img(src="assets/images/shoes/shoes-3.jpg" alt="")
-          li
-            img(src="assets/images/shoes/shoes-3.jpg" alt="")
-          li
-            img(src="assets/images/shoes/shoes-3.jpg" alt="")
+          li.product-gallery-thumbnails-item.active
+            img(src="assets/images/shoes/shoes-3-thumb1.jpg", srcset="assets/images/shoes/shoes-3-thumb1@2x.jpg 2x", alt="")
+          li.product-gallery-thumbnails-item
+            img(src="assets/images/shoes/shoes-3-thumb2.jpg", srcset="assets/images/shoes/shoes-3-thumb2@2x.jpg 2x", alt="")
+          li.product-gallery-thumbnails-item
+            img(src="assets/images/shoes/shoes-3-thumb3.jpg", srcset="assets/images/shoes/shoes-3-thumb3@2x.jpg 2x", alt="")
+          li.product-gallery-thumbnails-item
+            img(src="assets/images/shoes/shoes-3-thumb4.jpg", srcset="assets/images/shoes/shoes-3-thumb4@2x.jpg 2x", alt="")
           li.product-gallery-decor
             .product-gallery-decor-lines
           li
@@ -46,9 +46,9 @@ block content
               br
               | photos
 
-        .product-description
-          p 
-            span Adidas&nbsp;
-            | is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
+      .product-description
+        p 
+          span Adidas&nbsp;
+          | is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
 
     button.buy-btn Buy Now
