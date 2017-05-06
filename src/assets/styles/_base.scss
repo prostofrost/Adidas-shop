@@ -51,6 +51,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     background: url('/assets/images/SVG/search.svg') 10px 0 no-repeat;
+    transition: all 0.3s ease;
+    &:focus {
+      border-color: #dcdcdc;
+    }
   }
 }
 
@@ -65,6 +69,7 @@ body {
     a {
       color: #3c3c3c;
       text-decoration: none;
+      transition: all 0.4s ease;
       &.active,
       &:hover {
         color: #fff;
@@ -73,6 +78,7 @@ body {
   }
   .menu-dropdown {
     position: relative;
+    transition: all 0.4s ease;
     &::before {
       content: '';
       display: block;
@@ -82,6 +88,10 @@ body {
       position: absolute;
       right: -20px;
       top: 10px;
+      transition: all 0.4s ease;
+    }
+    &:hover::before {
+      transform: rotate(-180deg);
     }
   }
 }
@@ -123,6 +133,7 @@ body {
     font-size: 24px;
     text-transform: uppercase;
     color: #d6d6d6;
+    transition: all 0.4s ease;
   }
   .active,
    :hover {
@@ -159,15 +170,19 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    &:hover {
+      background: #f4f4f4;
+    }
   }
 }
 
 .product-card.product-card-sale {
-   ::before {
+   &::before {
     content: 'sale';
     position: absolute;
     top: 15px;
     right: 15px;
+    color: #fff;
     background: #ff5c5c;
     font-size: 14px;
     text-transform: uppercase;
@@ -179,6 +194,12 @@ body {
     background-image: -o-linear-gradient(287deg, #0c09bf, #966dd8);
     background-image: linear-gradient(17deg, #0c09bf, #966dd8);
     color: #fff;
+    &:hover {
+      background-image: -webkit-linear-gradient(287deg, #966dd8, #0c09bf);
+      background-image: -moz-linear-gradient(287deg, #966dd8, #0c09bf);
+      background-image: -o-linear-gradient(287deg, #966dd8, #0c09bf);
+      background-image: linear-gradient(17deg, #966dd8, #0c09bf);
+    }
   }
 }
 
@@ -215,6 +236,11 @@ body {
   height: 75px;
   border-radius: 50%;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    background: $filter;
+  }
 }
 
 .product-sets {
@@ -229,12 +255,14 @@ body {
 
 .product-sets-color {
   button {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     background: #ccc;
     border: none;
     border-radius: 50%;
     margin-left: 8px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease;
     &.grey {
       background-color: #c5c5c5;
     }
@@ -246,6 +274,9 @@ body {
     }
     &.palegrey {
       background-color: #e0e0e0;
+    }
+    &.active, &:hover {
+      border: 2px solid #0e0e0e;
     }
   }
   .product-sets-sale-badge {
@@ -282,9 +313,11 @@ body {
   align-items: center;
   justify-content: space-between;
   .product-gallery-thumbnails-item {
-    margin-right: 5px;
+    margin-right: 10px;
     flex: 0 0 17.5%;
     cursor: pointer;
+    outline: 5px solid #fff;
+    transition: all 0.3s ease;
     img {
       width: 100%;
     }
@@ -353,4 +386,11 @@ body {
   background-image: -moz-linear-gradient(left, #4949aa, #27275d);
   background-image: -o-linear-gradient(left, #4949aa, #27275d);
   background-image: linear-gradient(to right, #4949aa, #27275d);
+  transition: all 0.3s ease;
+  &:hover {
+    background-image: -webkit-linear-gradient(287deg, #966dd8, #0c09bf);
+    background-image: -moz-linear-gradient(287deg, #966dd8, #0c09bf);
+    background-image: -o-linear-gradient(287deg, #966dd8, #0c09bf);
+    background-image: linear-gradient(17deg, #966dd8, #0c09bf);
+  }
 }
