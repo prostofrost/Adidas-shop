@@ -152,6 +152,14 @@ body {
   }
 }
 
+.separator {
+  margin: 0 -2em 0.5em;
+  height: 3px;
+  border: 0 none;
+  color: #e7e7e7;
+  background-color: #e7e7e7;
+}
+
 .product-card {
   position: relative;
   background: #f4f4f4;
