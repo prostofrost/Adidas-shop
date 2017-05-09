@@ -4,14 +4,14 @@
 .fl-l {float: left;}
 .fl-r {float: right;}
 
-.no-desktop {display: none;}
 
-// margin-right
-.mr-70 {margin-right: 70px;}
+.no-mobile,
+.no-mobile-992 {
+  display: none;
+}
 
-// margin-bottom
-.mb-15 {margin-bottom: 15px;}
-.mb-150 {margin-bottom: 150px;}
-
-// margin-left
-.ml-20 {margin-left: 20px;}
+@media only screen and (min-width: 768px) {
+  .no-desktop-768 {
+    display: none;
+  }
+}

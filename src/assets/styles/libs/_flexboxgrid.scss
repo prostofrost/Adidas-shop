@@ -72,7 +72,7 @@
   flex-basis: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
   [class*="col-sm-"] {
     box-sizing: border-box;
     padding-right: 15px;
@@ -184,7 +184,7 @@
   }
 }
 
-@media only screen and (min-width: 1615px) {
+@media only screen and (min-width: 1600px) {
   [class*="col-lg-"] {
     box-sizing: border-box;
     padding-right: 15px;
