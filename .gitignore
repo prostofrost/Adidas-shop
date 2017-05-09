@@ -2,6 +2,7 @@
 
 dist/
 build/
+.eslintrc
 
 ### Bower ###
 bower_components
