@@ -11,8 +11,14 @@
 $ npm install
 ```
 
-Запустить проект:
+Сборка проекта:
 
 ```sh
-$ gulp watch
+$ npm build
+```
+
+Запуск проекта:
+
+```sh
+$ npm start
 ```

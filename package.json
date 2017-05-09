@@ -25,7 +25,8 @@
     "node-normalize-scss": "^2.0.0"
   },
   "scripts": {
-    "gulp": "./node_modules/.bin/gulp",
+    "build": "$(npm bin)/gulp",
+    "start": "$(npm bin)/gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "prostofrost",
