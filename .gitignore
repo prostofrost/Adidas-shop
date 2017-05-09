@@ -3,6 +3,7 @@
 dist/
 build/
 .eslintrc
+yarn.lock
 
 ### Bower ###
 bower_components
