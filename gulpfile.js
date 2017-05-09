@@ -89,6 +89,7 @@ gulp.task('fonts', function() {
 gulp.task('watch', ['browser-sync', 'sass', 'markup', 'img', 'fonts'], function() {
     gulp.watch(['src/assets/styles/*.sass', 'src/assets/styles/*.scss'], ['sass']);
     gulp.watch('src/*.jade', ['jade-watch']);
+    gulp.watch('src/components/**/*.jade', ['jade-watch']);
     gulp.watch('src/assets/js/app.js', ['scripts']);
 });
 
