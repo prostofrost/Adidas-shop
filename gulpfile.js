@@ -80,7 +80,13 @@ gulp.task('img', function() {
     .pipe(gulp.dest('build/img'))
 });
 
-gulp.task('watch', ['browser-sync', 'sass', 'markup', 'img'], function() {
+gulp.task('fonts', function() {
+    return gulp.src('src/assets/fonts/**/*')
+    .pipe(gulp.dest('dist/assets/fonts'))
+});
+
+
+gulp.task('watch', ['browser-sync', 'sass', 'markup', 'img', 'fonts'], function() {
     gulp.watch(['src/assets/styles/*.sass', 'src/assets/styles/*.scss'], ['sass']);
     gulp.watch('src/*.jade', ['jade-watch']);
     gulp.watch('src/assets/js/app.js', ['scripts']);
